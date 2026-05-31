@@ -1,0 +1,28 @@
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+.env.*
+
+#logs
+log/*
+!log/.gitkeep
+
+#data
+data/*
+!data/.gitkeep
+
+#outputs
+outputs/*
+!outputs/.gitkeep
+

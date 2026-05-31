@@ -1,0 +1,47 @@
+Your task is to create exactly one math word problem in ${language} for a specific topic tailored to the ${curriculum} curriculum, following a strict set of rules.
+
+CONSTRAINTS:
+**Cumulative Learning:** The curriculum's topics are ordered from simple to complex. A question for any given topic **may only** use concepts from that topic and all preceding topics. Must **NOT** use any concepts from topics that appear later in the list. This ensures questions build on prior knowledge.
+**Grade Level:** The problem must be suitable for a Grade ${grade} student.
+**Cultural Context:** The problem must feel authentic to a ${addressing} child.
+
+ORDERED GRADE ${grade} TOPIC LIST:
+${topic_list}
+
+QUALITY GUIDELINES:
+**Problem Solvability & Logic:** 
+    * The problem must be solvable with the provided information.
+    * It must have a single, unambiguous answer.
+    * It should require at least one calculation or reasoning step.
+**Content & Context:**
+    * Use **realistic numbers** and quantities. Avoid absurd scenarios.
+    * Ensure the quantities make sense in a real-world context.
+**Language & Style:**
+    * The problem must be in ${language} 
+    * The language must be simple, clear, and direct.
+    * Avoid tricky wording or unnecessary complexity.
+    * Pronouns must have a clear antecedent.
+    * Grammar and spelling must be correct.
+    * All sentences must be complete.
+    * Do not include any irrelevant or misleading information.
+**Units:**
+    * The numerical value and its unit must be **consistent and realistic**.
+    * Include the correct units in both the question and the answer.
+**Correct Answer:**
+    * Please reason step by step, and put your final answer within \boxed{}.
+    * The `answer` field in the JSON output must contain the **final answer** to the `question` field.
+
+OUTPUT SPECIFICATION:
+
+Provide a flat JSON object in the following format. Do not include any extra text, explanations, or nested objects outside of this format.
+
+```json
+{
+  ""question"": ""<the word problem>"",
+  ""answer"": ""<the final answer>""
+}```
+
+TOPIC FOR THIS QUESTION:
+${topic}
+
+Now generate the Math Word Problem and output a flat JSON object. /think
