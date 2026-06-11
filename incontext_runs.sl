@@ -1,4 +1,4 @@
-#!/bin/bash -e
+a#!/bin/bash -e
 
 #SBATCH --job-name=gemma_incontext_run
 #SBATCH --time=00-03:00:00
