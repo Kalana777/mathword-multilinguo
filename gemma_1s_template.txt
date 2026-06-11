@@ -17,7 +17,7 @@ QUALITY GUIDELINES:
     * Use **realistic numbers** and quantities. Avoid absurd scenarios.
     * Ensure the quantities make sense in a real-world context.
 **Language & Style:**
-    * The problem must be in ${language}  
+    * The problem must be in ${language} 
     * The language must be simple, clear, and direct.
     * Avoid tricky wording or unnecessary complexity.
     * Pronouns must have a clear antecedent.
@@ -35,11 +35,11 @@ OUTPUT SPECIFICATION:
 
 Provide a flat JSON object in the following format. Do not include any extra text, explanations, or nested objects outside of this format.
 
-```json
+
 {
   ""question"": ""<the word problem>"",
   ""answer"": ""<the final answer>""
-}```
+}
 
 EXAMPLE:
 ${example_1}
@@ -47,4 +47,4 @@ ${example_1}
 TOPIC FOR THIS QUESTION:
 ${topic}
 
-Now generate the Math Word Problem and output a flat JSON object. /think
+Now generate the Math Word Problem and output a flat JSON object.
